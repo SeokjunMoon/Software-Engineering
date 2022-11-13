@@ -1,0 +1,21 @@
+package refactoring.extractclass.before;
+
+public class PhoneNumber {
+	public String officeAreaCode;
+	public String officeNumber;
+
+	public PhoneNumber() {
+	}
+
+	public String getOfficeNumber(Worker worker) {
+		return getOfficeNumber();
+	}
+
+	public String getOfficeNumber() {
+		return officeNumber;
+	}
+
+	public String getPhoneNumber(Worker worker) {
+		return officeAreaCode + "-" + officeNumber;
+	}
+}

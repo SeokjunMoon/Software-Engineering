@@ -1,0 +1,9 @@
+package refactoring.extractclass.before;
+
+public class PhoneNumber {
+	public String officeAreaCode;
+	public String officeNumber;
+
+	public PhoneNumber() {
+	}
+}

@@ -1,0 +1,11 @@
+package refactoring.symbolicconstant.before;
+
+public class Dynamics {
+	public double getPotentialEnergy(final double mass, final double height) {
+		final double 중력가속도 = 9.81;
+		return mass * 중력가속도 * height;
+	}
+	public double getWeight(final double mass) {
+		return mass * 9.81;
+	}
+}

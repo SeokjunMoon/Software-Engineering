@@ -1,0 +1,24 @@
+1668268034329	Delete element
+1668268036606	Delete element
+1668268173989	Delete element
+1668268176190	Delete element
+1668295689148	Extract local variable 'isMacOs'
+1668295729962	Extract local variable 'isIEBrowser'
+1668295817682	Extract local variable 'isResized'
+1668295899949	Extract constant '중력가속도'
+1668296119725	Extract method 'displayBalance'
+1668296173053	Extract method 'getTotalBalance'
+1668296504846	Move method 'overdraftCharge'
+1668296743511	Move method 'displayBalance'
+1668296787418	Move method 'getTotalBalance'
+1668296993413	Extract Class...
+1668297129602	Move method 'getOfficeNumber'
+1668297140915	Move method 'getPhoneNumber'
+1668297176117	Change method 'getOfficeNumber'
+1668297185039	Change method 'getPhoneNumber'
+1668297195441	Change method 'getOfficeNumber'
+1668297250228	Encapsulate field 'officeAreaCode'
+1668297312347	Encapsulate field 'officeNumber'
+1668297519975	Extract constant 'maxOverdrawn'
+1668297563898	Rename field 'maxOverdrawn'
+1668297593845	Rename field 'PremiumMaxOverdrawn'

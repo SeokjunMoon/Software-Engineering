@@ -1,0 +1,14 @@
+package refactoring.extractmethod;
+
+public class BankDatabase {
+
+	public double getTotalBalance(int accountNumber) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double getTotalBalance(int accountNumber) {
+		return getTotalBalance(accountNumber);
+	}
+
+}

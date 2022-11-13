@@ -1,0 +1,26 @@
+package refactoring.movemethod.before;
+
+public class AccountType {
+
+	private static final double OriginalInterest = 1.75;
+	private static final double PremiumInterest = 0.85;
+	private static final int PremiumFreeTerm = 7;
+
+	public boolean isPremium() {
+		return false;
+	}
+	
+	double overdraftCharge(final int daysOverdrawn) {
+		if (isPremium()) {
+			double result = 10;
+			if (daysOverdrawn > PremiumFreeTerm) 
+				result += getPremiumResult(daysOverdrawn);
+			return result;
+		}
+		else return daysOverdrawn * OriginalInterest;
+	}
+
+	private double getPremiumResult(final int daysOverdrawn) {
+		return (daysOverdrawn - PremiumFreeTerm) * PremiumInterest;
+	}
+}

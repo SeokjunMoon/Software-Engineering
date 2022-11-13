@@ -1,0 +1,12 @@
+package refactoring.explainingvariable.before;
+
+public class WebServer {
+	public void run(String platform, String browser, int resize) {
+		int IS_MAC = platform.trim().toUpperCase().indexOf("MAC");
+		int IS_IE = browser.trim().toUpperCase().indexOf("IE");
+		if ( IS_MAC > -1 && IS_IE > -1 && resize > 0 ) {
+			// do something
+		} 
+	}
+
+}

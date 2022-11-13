@@ -1,0 +1,20 @@
+package refactoring.splittemporaryvariable.before;
+
+public class Rectangle {
+	private int width, height;
+	
+	public void printInfo() {
+		double temp = getLength();
+		System.out.println(temp);
+		temp = getArea();
+		System.out.println(temp);
+	}
+
+	private int getArea() {
+		return width * height;
+	}
+
+	private int getLength() {
+		return 2 * (width + height);
+	}
+}

@@ -1,0 +1,42 @@
+package refactoring.extractclass.before;
+
+public class Worker {
+	private String name;
+	private PhoneNumber phoneNumber = new PhoneNumber();
+
+
+	public Worker(String name, String officeAreaCode, String officeNumber) {
+		super();
+		this.name = name;
+		this.phoneNumber.officeAreaCode = officeAreaCode;
+		this.phoneNumber.officeNumber = officeNumber;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getOfficeAreaCode() {
+		return phoneNumber.officeAreaCode;
+	}
+
+	public void setOfficeAreaCode(String officeAreaCode) {
+		this.phoneNumber.officeAreaCode = officeAreaCode;
+	}
+
+	public String getOfficeNumber() {
+		return phoneNumber.getOfficeNumber();
+	}
+
+	public void setOfficeNumber(String officeNumber) {
+		this.phoneNumber.officeNumber = officeNumber;
+	}
+	
+	public String getPhoneNumber() {
+		return phoneNumber.getPhoneNumber();
+	}
+}

@@ -1,0 +1,13 @@
+package refactoring.explainingvariable.before;
+
+public class WebServer {
+	public void run(String platform, String browser, int resize) {
+		
+		final boolean isMacOs = platform.trim().toUpperCase().indexOf("MAC") > -1;
+		final boolean isIEBrowser = browser.trim().toUpperCase().indexOf("IE") > -1;
+		if ( isMacOs && isIEBrowser && resize > 0 ) {
+			// do something
+		} 
+	}
+
+}

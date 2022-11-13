@@ -1,0 +1,19 @@
+package refactoring.movemethod.before;
+
+public class Account {
+	private static final double basicCharge = 4.5;
+	private int daysOverdrawn;
+	private AccountType type;
+	
+	public double bankCharge() {
+		double result = basicCharge;
+		if (daysOverdrawn > 0) 
+			result += type.overdraftCharge(daysOverdrawn);
+		return result;
+	}
+	
+	public int getDaysOverdrawn() {
+		return daysOverdrawn;
+	}
+}
+
